@@ -11,7 +11,6 @@ import org.mapstruct.Mapping;
 @Mapper(uses = {DateMapper.class}, componentModel = "spring")
 public interface BeerInventoryMapper {
 
-    @Mapping(target = "upc", ignore = true)
     @Mapping(target = "version", ignore = true)
     BeerInventory beerInventoryDtoToBeerInventory(BeerInventoryDto beerInventoryDTO);
 
