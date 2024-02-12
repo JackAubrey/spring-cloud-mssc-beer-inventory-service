@@ -16,12 +16,13 @@
  */
 package guru.sfg.beer.inventory.service.domain;
 
+import jakarta.persistence.Entity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.UuidGenerator;
 
-import jakarta.persistence.Entity;
 import java.sql.Timestamp;
 import java.util.UUID;
 
@@ -43,6 +44,7 @@ public class BeerInventory extends BaseEntity{
         this.quantityOnHand = quantityOnHand;
     }
 
+    @UuidGenerator(style = UuidGenerator.Style.TIME)
     private UUID beerId;
     private String upc;
     private Integer quantityOnHand = 0;
