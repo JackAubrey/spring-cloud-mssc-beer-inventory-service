@@ -21,7 +21,8 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.annotations.UuidGenerator;
+import org.hibernate.annotations.JdbcType;
+import org.hibernate.type.descriptor.jdbc.VarcharJdbcType;
 
 import java.sql.Timestamp;
 import java.util.UUID;
@@ -44,7 +45,7 @@ public class BeerInventory extends BaseEntity{
         this.quantityOnHand = quantityOnHand;
     }
 
-    @UuidGenerator(style = UuidGenerator.Style.TIME)
+    @JdbcType(VarcharJdbcType.class)
     private UUID beerId;
     private String upc;
     private Integer quantityOnHand = 0;
