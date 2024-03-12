@@ -1,4 +1,4 @@
-package guru.sfg.beer.common.events;
+package guru.sfg.brewery.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotBlank;
@@ -42,7 +42,7 @@ public class BeerDto implements Serializable {
     private String beerName;
 
     @NotNull
-    private String beerStyle;
+    private BeerStyleEnum beerStyle;
 
     @NotNull
     private String upc;
