@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>mssc-beer-inventory-service</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>mssc-beer-inventory-service</name>
     <description>MSSC Beer Inventory Service</description>
 
@@ -43,4 +43,8 @@
             </plugin>
         </plugins>
     </build>
+
+  <scm>
+    <tag>1.0.0</tag>
+  </scm>
 </project>
