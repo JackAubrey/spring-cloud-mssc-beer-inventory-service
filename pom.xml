@@ -43,8 +43,17 @@
             </plugin>
         </plugins>
     </build>
-
-  <scm>
-    <tag>1.0.0</tag>
-  </scm>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub JackAubrey Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/JackAubrey/${project.repo-name}</url>
+        </repository>
+    </distributionManagement>
+    <scm>
+        <connection>scm:git:git@github.com:JackAubrey/${project.repo-name}.git</connection>
+        <developerConnection>scm:git:git@github.com:JackAubrey/${project.repo-name}.git</developerConnection>
+        <url>https://github.com/JackAubrey/${project.repo-name}</url>
+        <tag>1.0.0</tag>
+    </scm>
 </project>
