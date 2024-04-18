@@ -1,0 +1,2 @@
+# Bootstrap components
+org.springframework.boot.BootstrapRegistryInitializer=guru.sfg.beer.inventory.service.config.ConfigBootstrapRegistryInitializer
