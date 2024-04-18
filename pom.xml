@@ -23,6 +23,25 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.retry/spring-retry -->
+        <dependency>
+            <groupId>org.springframework.retry</groupId>
+            <artifactId>spring-retry</artifactId>
+            <version>2.0.5</version>
+        </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-jcl &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.logging.log4j</groupId>-->
+<!--            <artifactId>log4j-jcl</artifactId>-->
+<!--            <version>2.23.1</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.slf4j/jul-to-slf4j &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.slf4j</groupId>-->
+<!--            <artifactId>jul-to-slf4j</artifactId>-->
+<!--            <version>2.0.13</version>-->
+<!--        </dependency>-->
+
     </dependencies>
     <repositories>
         <repository>

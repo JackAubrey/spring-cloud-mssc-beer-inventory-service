@@ -1,0 +1,29 @@
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <turboFilter
+                class="ch.qos.logback.classic.turbo.DuplicateMessageFilter">
+            <AllowedRepetitions>2</AllowedRepetitions>
+        </turboFilter>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+
+    <logger name="org.springframework.core.env.PropertySourcesPropertyResolver" level="TRACE">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+
+    <logger name="org.apache" level="debug" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+    <logger name="httpclient.wire" level="debug" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+
+    <root level="debug">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>
